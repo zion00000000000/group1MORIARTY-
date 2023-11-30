@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>12STEMB7.GROUP1.MORIARTY</title>
+        <link href="CSS/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="slides">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img class="caro" src="SRC/zzzz (2).jpg">
+                    <div class="text">12STEMB7</div>
+                    </div>
+                
+                <div class="mySlides fade">
+                    <img class="caro" src="SRC/zzzz (3).jpg">
+                    <div class="text">12STEMB7</div>
+                    </div>
+                
+                <div class="mySlides fade">
+                    <img class="caro" src="SRC/zzzz (4).jpg">
+                    <div class="text">12STEMB7</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="caro" src="SRC/zzzz (1).jpg">
+                        <div class="text">12STEMB7</div>
+                    </div>
+    
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        <nav class="navbar">
+            <ul>
+                <li><a href="main.html">HOME</a></li>
+                <li><a href="lessons.html">LESSON</a></li>
+                <LI><a href="students.html">STUDENT</a></LI>
+            </ul>
+        </nav>
+        <div class="title">
+            <p>Group1</p>
+        </div>
+        <div class="topics">
+            <div class="container">
+                <img src="SRC/group1.jpg">
+                <p>We are Honored to present to you, Moriarty our group's very own launched website. This website acts as a platform is a compilation our groups work which we show to here in our website. Its goal is to provide information to our visitors about the lessons we have tackled not only that we wanted to show them our appreciation towards to our group member because of their hardwork to the performance they have done to this subject. <br><br>
+
+                    We believe that this website will be helpful to showcase our work and to promote information accessibility. Please browse the website at @Moriarty url and provide us your feedback. Your Feedback will be collected and will be much appreciated as It'll help us improve our websites flaws and to improve it's accessibility.
+                </p>
+            </div>
+        </div>
+        <div class="topics">
+            <div class="container">
+                <img src="SRC/mil1.jpg">
+                <p>What is media information literacy it is a combination of knowledge which help the people to have a practice that helps the people to analyse, evaluate and ethics when it comes to media and finding information that is needed.
+                </p>
+            </div>
+        </div>
+        <div class="topics">
+            <div class="container">
+                <img src="SRC/mil2.jpg">
+                <p>Media and Information Literacy (MIL) is a “combination of knowledge, attitudes, skills, and practices required to access, analyse, evaluate, use, produce, and communicate information and knowledge in creative, legal and ethical ways that respect human rights” (Moscow Declaration on Media and Information Literacy, 2012).
+                </p>
+            </div>
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 5000); 
+            }
+        </script>
+    </body>
+</html>
